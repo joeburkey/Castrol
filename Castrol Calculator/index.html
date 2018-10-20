@@ -32,28 +32,30 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <div col-sm-12 id="header">
+    <div class="row">
+    <div class="col-sm-12" id="header">
         <div class="col-sm-1">
             <div class="headerLeft"></div>
         </div>
-        <div class="col-sm-11">
+        <!--<div class="col-sm-12">-->
             <div class="headerRight">
                 <div class="col-sm-3">
                 <img id="logo" src="Resources/Castrol_logo.svg" />
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-12">
                 <h1 id="h1">Castrol's Efficieny Calculator</h1>
                 </div>
-                <div class="col-sm-6>
-                <ul>
-                    <li><a href="AboutUs.html">Learn more about Castrol</a></li>
-                    <li><a href=""></a></li>
+                <div class="col-sm-6">
+                <ul id="navBar">
+                    <li><a class="headerList" href="#">Learn more about Castrol &nbsp;</a></li>
+                    <li><a class="headerList" href="#">Disclaimer &nbsp;</a></li>
                 </ul>
                 </div>
             </div>
-        </div>
+        <!--</div>-->
     </div>
-    <div class="col-sm-12">
+    </div>
+    <div class="col-sm-12" id="textArea">
         <div class="col-sm-4" id="indexText">
             <article>
                 <h2>Welcome to Castrol's Efficiency Calculator</h2>
@@ -87,10 +89,6 @@
                 <!-- Grid column -->
                 <div class="col-md-6 mt-md-0 mt-3">
 
-                    <!-- Content -->
-                    <h5 class="text-uppercase">Footer Content</h5>
-                    <p>Here you can use rows and columns here to organize your footer content.</p>
-
                 </div>
                 <!-- Grid column -->
 
@@ -99,10 +97,8 @@
                 <!-- Grid column -->
                 <div class="col-md-3 mb-md-0 mb-3">
 
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
 
-                    <ul class="list-unstyled">
+                    <ul id="footerLinks">
                         <li>
                             <a href="#!">Link 1</a>
                         </li>
