@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <link rel="stylesheet" src="Scripts/jquery-ui-1.12.1.min.js">
 <link rel="stylesheet" href="jquery-ui.min.css">
+ <src="https://use.fontawesome.com/97ff6df20f.js">
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="jquery-ui.min.css">-->
     <script src="external/jquery/jquery.js"></script>
     <script src="jquery-ui.min.js"></script>
+    <script src="Scripts/actions.js"></script>
     <meta name="viewport" content="width=auto, height=auto, initial-scale=1, maximum-scale=1" />
     <link rel="apple-touch-icon" sizes="57x57" href="Resources/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="Resources/favicons/apple-icon-60x60.png">
@@ -33,27 +35,27 @@
 </head>
 <body>
     <div class="row">
-    <div class="col-sm-12" id="header">
-        <div class="col-sm-1">
-            <div class="headerLeft"></div>
-        </div>
-        <!--<div class="col-sm-12">-->
+        <container id="header">
+            <div class="col-sm-1">
+                <div class="headerLeft"></div>
+            </div>
+            <!--<div class="col-sm-12">-->
             <div class="headerRight">
                 <div class="col-sm-3">
-                <img id="logo" src="Resources/Castrol_logo.svg" />
+                    <img id="logo" src="Resources/Castrol_logo.svg" />
                 </div>
                 <div class="col-sm-12">
-                <h1 id="h1">Castrol's Efficieny Calculator</h1>
+                    <h1 id="h1">Castrol's Efficieny Calculator</h1>
                 </div>
                 <div class="col-sm-6">
-                <ul id="navBar">
-                    <li><a class="headerList" href="#">Learn more about Castrol &nbsp;</a></li>
-                    <li><a class="headerList" href="#">Disclaimer &nbsp;</a></li>
-                </ul>
+                    <ul id="navBar">
+                        <li><a class="headerList" href="#" onclick="modal()">Learn more about Castrol &nbsp;</a></li>
+                        <li><a class="headerList" href="#">Disclaimer &nbsp;</a></li>
+                    </ul>
                 </div>
             </div>
-        <!--</div>-->
-    </div>
+            <!--</div>-->
+        </container>
     </div>
     <div class="col-sm-12" id="textArea">
         <div class="col-sm-4" id="indexText">
@@ -77,74 +79,7 @@
         <div class="oilImg"></div>
     </div>
 
-    <!-- Footer -->
-    <footer class="page-footer font-small blue pt-4">
-
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
-
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-3">
-
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-
-
-                    <ul id="footerLinks">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-            </div>
-            <!-- Grid row -->
-
-        </div>
-
-    </footer>
-    <!-- Footer -->
+    <div class="footer">
+    </div>
 </body>
 </html>
